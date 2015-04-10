@@ -16,7 +16,7 @@ GIT_PS1_SHOWCOLORHINTS=true
 ```
 
 ##screensaver.sh
-Fixes a screensaver timeout policy that is too short. Create a plist file with the following contents in your launchctl folder (~/Library/LaunchAgent/screensaver.plist) and it will run on a schedule:
+Fixes a screensaver timeout policy that is too short. I scheduled it to run as a job every 4 minutes so that the default 5 minute timeout is never hit. Create a plist file with the following contents in your launchctl folder (~/Library/LaunchAgent/screensaver.plist):
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
